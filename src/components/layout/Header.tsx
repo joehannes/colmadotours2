@@ -17,7 +17,7 @@ const Header: React.FC = () => {
           <div className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-amber-300 to-teal-500 text-lg shadow-lg">
             🍹
           </div>
-          <h1 className="hidden text-2xl font-bold text-slate-900 transition group-hover:text-teal-700 sm:block">
+          <h1 className="hidden text-2xl font-tropical font-bold text-slate-900 transition group-hover:text-teal-700 sm:block">
             {brandSettings.brandName}
           </h1>
         </Link>
