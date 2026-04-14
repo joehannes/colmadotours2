@@ -4,6 +4,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        tropical: ['Pacifico', 'cursive'],
+        heading: ['Playfair Display', 'serif'],
+        body: ['Inter', 'sans-serif'],
+      },
       colors: {
         tropicalGreen: '#2BB673',
         tropicalBlue: '#0095D9',
