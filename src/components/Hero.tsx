@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundImage }) => {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(120deg, rgba(17,36,58,.85), rgba(15,91,131,.7)), url('${backgroundImage}')`,
+        backgroundImage: `linear-gradient(120deg, rgba(17,36,58,.35), rgba(15,91,131,.3)), url('${backgroundImage}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transform: `translateY(${parallaxOffset}px)`,
