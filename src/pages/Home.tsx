@@ -9,7 +9,7 @@ import { Tour, getExampleTours, getTransportServices } from '../services/toursSe
 import { useI18n } from '../contexts/I18nContext';
 import { useBrand } from '../contexts/BrandContext';
 
-const HERO_BACKGROUND_IMAGE = 'https://iili.io/fa6E1Sa.jpg';
+const HERO_BACKGROUND_IMAGE = '/xtours.webp';
 
 const Home: React.FC = () => {
   const { locale } = useI18n();
