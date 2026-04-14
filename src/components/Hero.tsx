@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundImage }) => {
       <div className="section-shell flex min-h-[82vh] items-center py-20">
         <div className="bg-white/30 backdrop-blur-lg border border-white/20 max-w-3xl rounded-3xl p-8 md:p-12">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-teal-700">Bávaro · Punta Cana · Dominican Republic</p>
-          <h1 className="mb-5 text-5xl font-bold leading-tight text-slate-900 md:text-7xl">
+          <h1 className="mb-5 text-5xl font-tropical font-bold leading-tight text-slate-900 md:text-7xl">
             <FormattedMessage id="hero.title" values={{ brand: brandSettings.brandName }} />
           </h1>
           <p className="mb-8 text-lg text-slate-700 md:text-xl">
