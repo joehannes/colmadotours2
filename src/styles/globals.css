@@ -1,29 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --ink: #11243a;
-  --ink-soft: #36506e;
-  --sand: #f6f2e8;
-  --sun: #f3b34c;
-  --palm: #177e72;
-  --ocean: #0f5b83;
-  --card: rgba(255, 255, 255, 0.9);
+  --ink: #1a2332;
+  --ink-soft: #4a5568;
+  --sand: #fff8e7;
+  --sun: #ff6b35;
+  --palm: #00a896;
+  --ocean: #028090;
+  --card: rgba(255, 255, 255, 0.92);
 }
 
 * {
-  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background:
-    radial-gradient(circle at 15% 20%, rgba(243, 179, 76, 0.24), transparent 45%),
-    radial-gradient(circle at 75% 10%, rgba(23, 126, 114, 0.16), transparent 40%),
-    linear-gradient(180deg, #fdfbf7 0%, #f4f8fc 50%, #eef4fb 100%);
+    radial-gradient(circle at 25% 15%, rgba(255, 107, 53, 0.18), transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 168, 150, 0.14), transparent 45%),
+    linear-gradient(180deg, #fffbf0 0%, #f0f9ff 50%, #e6f7f9 100%);
   color: var(--ink);
 }
 
@@ -34,15 +36,16 @@ h4,
 h5,
 h6,
 .font-lobster {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.01em;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.02em;
   color: var(--ink);
   text-shadow: none;
 }
 
 a {
-  color: var(--ocean);
-  transition: all 0.25s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -50,42 +53,55 @@ a:hover {
 }
 
 button {
-  border-radius: 9999px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-shell {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
 }
 
 .glass-card {
   background: var(--card);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(17, 36, 58, 0.08);
-  box-shadow: 0 20px 45px rgba(17, 36, 58, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tropical-button {
-  @apply inline-flex items-center justify-center font-semibold py-3 px-6 rounded-full;
-  background: linear-gradient(120deg, var(--ocean), var(--palm));
+  @apply inline-flex items-center justify-center font-semibold py-3 px-8 rounded-full;
+  background: linear-gradient(135deg, var(--sun), var(--ocean));
   color: #ffffff;
-  box-shadow: 0 10px 30px rgba(15, 91, 131, 0.3);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .tropical-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(23, 126, 114, 0.3);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 45px rgba(255, 107, 53, 0.45);
 }
 
 .tropical-button-outline {
-  @apply inline-flex items-center justify-center font-semibold py-3 px-6 rounded-full;
-  border: 2px solid var(--ocean);
-  color: var(--ocean);
-  background: rgba(255, 255, 255, 0.75);
+  @apply inline-flex items-center justify-center font-semibold py-3 px-8 rounded-full;
+  border: 2.5px solid var(--palm);
+  color: var(--palm);
+  background: rgba(255, 255, 255, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 .tropical-button-outline:hover {
-  border-color: var(--palm);
-  color: var(--palm);
+  border-color: var(--sun);
+  color: var(--sun);
   background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.2);
 }

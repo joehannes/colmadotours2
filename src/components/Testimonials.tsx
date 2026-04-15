@@ -2,30 +2,30 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 const testimonials = [
-{
-name: 'Michael Johnson',
-feedback: 'Everything was perfectly organized from pickup to return. Monkey Island truly went beyond what we expected.',
-location: 'New York, USA',
-avatar: 'https://randomuser.me/api/portraits/men/5.jpg',
-},
-{
-name: 'Ana Martinez',
-feedback: 'Swimming with dolphins felt unreal — a lifelong dream fulfilled! I would absolutely recommend this tour company.',
-location: 'Madrid, Spain',
-avatar: 'https://randomuser.me/api/portraits/women/3.jpg',
-},
-{
-name: 'Oliver Thompson',
-feedback: 'The party boat experience was incredible — great vibes, music, and stunning ocean views.',
-location: 'London, UK',
-avatar: 'https://randomuser.me/api/portraits/men/4.jpg',
-},
-{
-name: 'Elena Romano',
-feedback: 'Riding horseback through the jungle was simply unforgettable. Definitely one of the highlights of Punta Cana!',
-location: 'Rome, Italy',
-avatar: 'https://randomuser.me/api/portraits/women/5.jpg',
-},
+  {
+    name: 'Sarah Mitchell',
+    feedback: 'An absolutely magical day exploring hidden beaches and crystal-clear waters. The guides were knowledgeable and made us feel like VIPs throughout!',
+    location: 'Toronto, Canada',
+    avatar: 'https://randomuser.me/api/portraits/women/12.jpg',
+  },
+  {
+    name: 'Carlos Mendoza',
+    feedback: 'The catamaran sunset cruise exceeded all expectations. Perfect blend of relaxation, adventure, and breathtaking Caribbean scenery.',
+    location: 'Buenos Aires, Argentina',
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+  },
+  {
+    name: 'Emma Larsson',
+    feedback: 'Snorkeling in the coral reefs was like entering another world! Professional crew, pristine equipment, and unforgettable marine life encounters.',
+    location: 'Stockholm, Sweden',
+    avatar: 'https://randomuser.me/api/portraits/women/28.jpg',
+  },
+  {
+    name: 'James O\'Brien',
+    feedback: 'The jungle safari and waterfall tour was the highlight of our vacation. Authentic, thrilling, and beautifully organized from start to finish.',
+    location: 'Dublin, Ireland',
+    avatar: 'https://randomuser.me/api/portraits/men/22.jpg',
+  },
 ];
 
 const Testimonials = () => {
